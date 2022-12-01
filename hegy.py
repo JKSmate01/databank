@@ -13,10 +13,10 @@ def meter(menny):
 def nagybetu(nev):
     nev = nev.upper()
     return nev
-a = ["a","e","u","o","i"]
+a = ["a","á","e","é","u","ú","ü","ű","o","ó","ö","ő","i","í"]
 def nevelo(nev):
     for i in a:
-        if (nev[0] == i):
+        if (nev[0].lower() == i):
             return "Az"
     return "A"
 nevek = []
@@ -26,6 +26,4 @@ for i in range(3):
     magassag.append(float(input(f"Adja meg a(z) {i+1}. hegymászó által megmászott hegy magasságát! ")))
     print(f"{nevek[i]} {meter(magassag[i]):0.2f}km magasra mászott")
     print(nagybetu(nevek[i]))
-    print(f"{nevelo(nevek[0])} {nevek[i]}.")
-
-
+    print(f"{nevelo(nevek[i])} {nevek[i]}.")
