@@ -40,19 +40,22 @@ a = 10
 proc(a)
 print(a)
 #Tökéletes szám
+tokeletesek = []
 def pm(num):
     end = int(num/2)
     s = 1
     for i in range(2,end+1):
         if num % i == 0:
-            s += 1
+            s += i
     if s == num:
         print("Tökéletes szam")
+        tokeletesek.append(num)
     else:
         print("Nem tökéletes szám")
 for i in range(2,1001):
     print(i,end=" ")
     pm(i)
+print(tokeletesek)
 ob = int(input("Kérem a vizsgálandó számot: "))
 pm(ob)
 #függ minta
@@ -64,4 +67,3 @@ tax = int(input("Kérem a kedvezmény nélküli adót: "))
 length = int(input("Kérem a telek hosszát: "))
 width = int(input("Kérem a telek szélességét: "))
 print(f"A kedvezményes adó: {red(tax,width,length)}")
-#ss
