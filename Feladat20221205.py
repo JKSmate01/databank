@@ -64,3 +64,4 @@ tax = int(input("Kérem a kedvezmény nélküli adót: "))
 length = int(input("Kérem a telek hosszát: "))
 width = int(input("Kérem a telek szélességét: "))
 print(f"A kedvezményes adó: {red(tax,width,length)}")
+#ss
