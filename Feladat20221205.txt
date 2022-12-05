@@ -67,13 +67,3 @@ tax = int(input("Kérem a kedvezmény nélküli adót: "))
 length = int(input("Kérem a telek hosszát: "))
 width = int(input("Kérem a telek szélességét: "))
 print(f"A kedvezményes adó: {red(tax,width,length)}")
-
-def hetnapja(honap,nap):
-    napnev = ("vasarnap","hetfo","kedd","szerda","csutortok","pentek","szombat")
-    napszam = (0, 31, 59,90,120,151,181,212,243,273,304,335)
-    napsorszam = (napszam[honap+1]+nap)%7
-    print(napsorszam)
-    hetnapja = napnev[napsorszam]
-
-    return hetnapja
-print(hetnapja(1,1))
