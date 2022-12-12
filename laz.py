@@ -1,10 +1,11 @@
-def foros():
-    for ember in range(3):
-        th = float(input(f"Mennyi a(z) {ember+1}. testhőmérséklete? "))
+def foros(amount):
+    for ember in range(amount):
+        nev = input("Add meg a beteg nevét! ")
+        th = float(input(f"Mennyi {nev} testhőmérséklete? "))
         while th < 34 or th > 45:
             print(f"Ez nem reális hőfok! ({th})")
-            th = float(input(f"Mennyi a(z) {ember+1}. testhőmérséklete? "))
-        print(f"{ember+1}.")
+            th = float(input(f"Mennyi {nev} testhőmérséklete? "))
+        print(nev)
         if (th < 36):
             print("Enyhe kihülés.")
         elif (th  >= 36 and th  < 37):
@@ -15,16 +16,19 @@ def foros():
             print("Magas láz!")
         elif (th  > 40):
             print("Kórház!")
-def listas():
+def listas(amount):
     hofokok = []
-    for _ in range(3):
-        th = float(input(f"Mennyi a testhőmérséklete? "))
+    nevek = []
+    for _ in range(amount):
+        nev = input("Add meg a beteg nevét! ")
+        th = float(input(f"Mennyi {nev} testhőmérséklete? "))
         while th < 34 or th > 45:
             print(f"Ez nem reális hőfok! ({th})")
-            th = float(input(f"Mennyi a testhőmérséklete? "))
+            th = float(input(f"Mennyi {nev} testhőmérséklete? "))
         hofokok.append(th)
+        nevek.append(nev)
     for i in range(len(hofokok)):
-        print(f"{i+1}.")
+        print(nevek[i])
         if (hofokok[i] < 36):
             print("Enyhe kihülés.")
         elif (hofokok[i] >= 36 and hofokok[i] < 37):
@@ -43,8 +47,9 @@ def listas():
     for i in range(len(hofokok)):
         print(hofokok[i],end=",")
     print("")
+am = int(input("Hány embert akarsz megvizsgálni? "))
 w = int(input("foros:0 listas:1? "))
 if (w == 0):
-    foros()
+    foros(am)
 elif(w==1):
-    listas()
+    listas(am)
