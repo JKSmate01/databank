@@ -1,0 +1,79 @@
+body{
+    background-color:blue;
+}
+header{
+    background-position: center center;
+}
+h1{
+
+    background-color: rgba(248, 248, 248,75%);
+    font-family: Verdana;   
+    color: #416618;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.auto{
+    height: 250px;
+    float: right;
+    margin-left: 25px;
+}
+
+.kiemelt{
+    font-weight: bold;
+    color: red;
+}
+.forras{
+    text-align: right;
+}
+.btn-group{
+    background-color:blue;
+    padding: 10px;
+    margin-left: 8px;
+    margin-right: 200px;
+  
+
+}
+.btn-group li{
+    display:inline-block; 
+     width: 100px;
+     
+}
+.btn-group a {
+    color:white;
+   
+}
+.btn-primary{
+    color: white;
+    
+}
+
+.container{
+    margin:auto;
+    background-color:lightblue;
+    padding: 10px;
+    border: solid 2px;
+}
+
+
+.d-block{
+    margin: auto;
+}
+table{
+    text-align: center;
+    border: 2px;
+    margin:0 auto;
+    caption-side: top;
+}
+caption{
+	text-align:	center;
+	font-weight: bold;
+}
