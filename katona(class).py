@@ -16,4 +16,3 @@ for i in range(3):
     hk.append(Hires_katona(nev,fog,n))
 for katona in hk:
     print(f"{katona.elotag()} {katona.nev} egy híres {katona.nemzetiseg}")
-
